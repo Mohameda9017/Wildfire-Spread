@@ -1,0 +1,58 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# macOS / editor
+.DS_Store
+.vscode/
+.idea/
+
+# Large model/data artifacts
+*.pt
+*.pth
+*.npy
+*.npz
+*.tfrecord
+*.tfrecords
+*.ckpt
+*.h5
+*.keras
+*.log
+
+# Keep folder structure, ignore raw/processed data contents
+data/raw_tfrecords/*
+!data/raw_tfrecords/.gitkeep
+
+data/processed_pt/*
+!data/processed_pt/.gitkeep
+data/processed_pt/train/*
+!data/processed_pt/train/.gitkeep
+data/processed_pt/eval/*
+!data/processed_pt/eval/.gitkeep
+data/processed_pt/test/*
+!data/processed_pt/test/.gitkeep
+
+# Keep split folder, ignore generated split files if you want
+data/splits/*
+!data/splits/.gitkeep
+
+# Keep output folders, ignore generated files
+outputs/checkpoints/*
+!outputs/checkpoints/.gitkeep
+
+outputs/figures/*
+!outputs/figures/.gitkeep
+
+outputs/logs/*
+!outputs/logs/.gitkeep
